@@ -44,7 +44,7 @@
         <div class="terminal-body">
           <p><b>role</b> <span>IT Support / Infrastructure</span></p>
           <p><b>focus</b> <span>Corporate IT · Networking</span></p>
-          <p><b>tooling</b> <span>Zoho Desk · Intune · AD</span></p>
+          <p><b>tooling</b> <span>Zoho Desk · Intune · Jira</span></p>
           <p><b>interest</b> <span>Fintech · Digital systems</span></p>
           <div class="terminal-line"><span>+</span> Always learning, troubleshooting, documenting.</div>
         </div>
@@ -81,9 +81,12 @@
           </div>
           <div class="experience-grid">
             <article><span class="icon">01</span><h3>Support & Ticketing</h3><p>Managed priority-based IT tickets in Zoho Desk, resolved software faults, documented incidents and escalated complex cases to senior engineers.</p></article>
-            <article><span class="icon">02</span><h3>Equipment & Accounts</h3><p>Helped deploy and configure PCs, IP phones, CCTV and Smartbox devices across 30+ vessel environments, including account and password checks before handover.</p></article>
+            <article><span class="icon">02</span><h3>Equipment & Accounts</h3><p>Helped deploy and configure PCs, IP phones, CCTV and Smartbox devices across 30+ vessels, including account and password checks before handover.</p></article>
             <article><span class="icon">03</span><h3>Networking & VoIP</h3><p>Configured IP, subnet and gateway settings for CCTV systems and co-led DIDWW VoIP migration activities across 70+ vessels, including live call testing.</p></article>
             <article><span class="icon">04</span><h3>Documentation</h3><p>Created 2 SOPs and 2 handover documents to standardise processes and improve knowledge sharing within the team.</p></article>
+            <article><span class="icon">05</span><h3>Monitoring</h3><p>Built 2 Zoho Analytics CSAT dashboards and created daily operational dashboards in Power BI to monitor vessel LTE status.</p></article>
+            <article><span class="icon">05</span><h3>Vendor Coordination</h3><p>Tracked vendor escalations, followed up on issues and coordinated with senior engineers and vendors.</p></article>
+        
           </div>
         </div>
       </div>
@@ -117,6 +120,18 @@
           <p>Co-led a real-time web and mobile emergency management system with role-based access, live evacuation maps and operational dashboards.</p>
           <div class="tags"><span>React</span><span>Flutter</span><span>Firebase</span><span>Node.js</span><span>Mapbox</span></div>
         </article>
+        <article class="project">
+          <div class="project-meta"><span>DEVOPS</span><span>05</span></div>
+          <h3>DevOps CI/CD Pipeline</h3>
+          <p>Designed a CI/CD pipeline using GitHub Actions with Docker containerisation and Kubernetes orchestration, covering infrastructure automation and container-based deployment workflows.</p>
+          <div class="tags"><span>GitHub Actions</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span></div>
+        </article>
+        <article class="project">
+          <div class="project-meta"><span>E-COMMERCE · NODE.JS</span><span>06</span></div>
+          <h3>Product Catalogue Web App</h3>
+          <p>Built a product management web app in Year 1 with a REST API supporting create, read, update and delete for products and categories, backed by a relational MySQL database.</p>
+          <div class="tags"><span>Node.js</span><span>Express</span><span>MySQL</span><span>REST API</span></div>
+        </article>
       </div>
     </section>
 
@@ -124,14 +139,32 @@
       <div class="container">
         <p class="section-label">04 / Skills</p>
         <div class="skills-layout">
-          <div><h2>What I work with.</h2><p class="muted">A practical mix of corporate IT, networking and development skills.</p></div>
+          <div>
+            <h2>What I work with.</h2>
+            <p class="muted">A practical mix of corporate IT, NOC/networking and software development skills.</p>
+            <div class="skill-filter" role="tablist" aria-label="Filter skills by role">
+              <button class="active" data-filter="all" role="tab" aria-selected="true">All</button>
+              <button data-filter="infra" role="tab" aria-selected="false">IT Support &amp; NOC</button>
+              <button data-filter="dev" role="tab" aria-selected="false">Software Dev</button>
+            </div>
+          </div>
           <div class="skill-list">
-            <div class="skill-row"><strong>IT Support</strong><span>Tier 1/2 support · hardware/software troubleshooting · equipment provisioning · software installation · user account support</span></div>
-            <div class="skill-row"><strong>Ticketing</strong><span>Zoho Desk · Jira (academic exposure) · ticket management · priority-based triage · documentation</span></div>
-            <div class="skill-row"><strong>Systems</strong><span>Windows 10/11 · Microsoft 365 · Basic Active Directory · Microsoft Intune MDM</span></div>
-            <div class="skill-row"><strong>Networking</strong><span>TCP/IP · DNS · DHCP · LAN/WAN · VLAN · VPN · IP addressing · firewall ACLs</span></div>
-            <div class="skill-row"><strong>AI Tools</strong><span>GitHub Copilot · ChatGPT · Claude · Gemini</span></div>
-            <div class="skill-row"><strong>Development</strong><span>Python · Flask · JavaScript · Node.js · SQL · React · Flutter · Git</span></div>
+            <div class="skill-row" data-cat="infra"><strong>IT Support &amp; Equipment</strong><span>Tier 1/2 support · hardware/software troubleshooting · equipment provisioning · installation &amp; commissioning · PC setup · software installation</span></div>
+            <div class="skill-row" data-cat="infra"><strong>Ticketing &amp; NOC</strong><span>Zoho Desk · JIRA · SLA-aware priority triage · incident documentation &amp; escalation · connectivity/uptime monitoring</span></div>
+            <div class="skill-row" data-cat="infra"><strong>Networking</strong><span>TCP/IP · DNS · DHCP · LAN/WAN · VLAN · VPN · Wi-Fi · firewall basics (Cisco Packet Tracer) · VoIP (SIP/DID, DIDWW)</span></div>
+            <div class="skill-row" data-cat="infra"><strong>Systems &amp; Identity</strong><span>Windows 11 · Microsoft 365 · basic Active Directory · user account setup &amp; password resets · Hyper-V</span></div>
+            <div class="skill-row" data-cat="infra"><strong>Endpoint &amp; Security</strong><span>Microsoft Intune MDM · endpoint security · basic network security settings · CCTV configuration (SADP) · IP/subnet/gateway configuration</span></div>
+            <div class="skill-row" data-cat="infra"><strong>Asset &amp; Documentation</strong><span>asset inventory &amp; labelling · handover documentation · SOP writing · incident documentation</span></div>
+            <div class="skill-row" data-cat="infra"><strong>Monitoring &amp; Reporting</strong><span>Power BI · Zoho Analytics · CSAT reporting · dashboard building</span></div>
+            <div class="skill-row" data-cat="dev"><strong>Languages</strong><span>Python · JavaScript · SQL · HTML/CSS · Bash (basic)</span></div>
+            <div class="skill-row" data-cat="dev"><strong>Frontend</strong><span>React · Flutter · Mapbox · Firebase · push notifications · responsive design</span></div>
+            <div class="skill-row" data-cat="dev"><strong>Backend</strong><span>Node.js · Express.js · Python Flask · REST API development · JWT auth · PayPal OAuth2</span></div>
+            <div class="skill-row" data-cat="dev"><strong>Databases</strong><span>MongoDB · Firebase Firestore · MySQL · SQL · basic database design</span></div>
+            <div class="skill-row" data-cat="dev"><strong>DevOps &amp; Cloud</strong><span>Docker · Kubernetes · GitHub Actions (CI/CD) · Git · AWS (basics) · Linux (Ubuntu)</span></div>
+            <div class="skill-row" data-cat="dev"><strong>Security</strong><span>OWASP Top 10 · role-based access control · CAPTCHA · secure API design · input validation</span></div>
+            <div class="skill-row" data-cat="dev"><strong>Other Tools</strong><span>Power BI · Zoho Analytics · Zoho Desk · JIRA · Agile/Scrum · Microsoft 365</span></div>
+            <div class="skill-row" data-cat="infra dev"><strong>AI-Assisted Tools</strong><span>GitHub Copilot (IDE) · ChatGPT / Claude / Gemini (debugging &amp; troubleshooting)</span></div>
+            <div class="skill-row" data-cat="infra dev"><strong>Linux &amp; Cloud</strong><span>Linux Essentials (certified) · AWS basics (coursework) · cloud computing fundamentals (coursework)</span></div>
           </div>
         </div>
       </div>
@@ -143,6 +176,7 @@
         <article><span class="mono">2026</span><h3>Diploma in Information Technology</h3><p>Temasek Polytechnic, Singapore<br>Fintech elective</p></article>
         <article><span class="mono">CERTIFICATION</span><h3>Microsoft Intune MDM</h3><p>Endpoint and device-management focused learning.</p></article>
         <article><span class="mono">CERTIFICATION</span><h3>Linux Essentials</h3><p>Linux fundamentals and command-line concepts.</p></article>
+        <article><span class="mono">CERTIFICATION</span><h3>Windows 11 Security</h3><p>Windows 11 security concepts.</p></article>
       </div>
     </section>
 
@@ -153,7 +187,7 @@
   </main>
 
   <footer class="footer container">
-    <div><strong>HSU YATI WINN</strong><span>IT Support · Network & Infrastructure · Fintech</span></div>
+    <div><strong>HSU YATI WINN</strong><span>IT Support · Network & Infrastructure · Junior Software Devloper · Fintech</span></div>
     <div class="footer-links"><a href="https://linkedin.com/in/hsu-yati-winn/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:hsuyatiwinn33@gmail.com">Email ↗</a></div>
     <small>© 2026 HSU YATI WINN</small>
   </footer>
